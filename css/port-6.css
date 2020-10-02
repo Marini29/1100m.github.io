@@ -204,13 +204,16 @@ header{
 
 /**/
 @media (max-width: 600px){
-     .logo{
-        position: relative;
-        max-width: 150px;
-    }
+ .logo{
+    position: relative;
+    max-width: 150px;
+}
+header{
+    background-color: var(--clr-accent);
+}
 .nav{
     position: fixed;
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -289,7 +292,7 @@ header{
 .hamburger,
 .hamburger::before,
 .hamburger::after{
-    background: var(--clr-accent);
+    background: var(--clr-light);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -620,9 +623,9 @@ header{
         display: none;
     }
     #home{
-            background: url(../img/Foto_pico3.png);
+            background: url(../img/fondo_web_final.png);
             background-size: cover;
-            background-position: 75% 75%;
+            background-position: 65% 75%;
     }
 
     header{
@@ -730,6 +733,15 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    .my-services .abstract{
+        margin: 0 0;
+    }
+    .service_link{
+        color: var(--clr-light);
+    }
+    .service p{
+        font-family: var(--ff-secondary);
+    }
 }
 .section_about{
     max-width: 100vw;
@@ -803,7 +815,7 @@ header{
     .footer {
         display: grid;
         background: rgb(34, 33, 33);
-        color: var(--clr-gray);
+        color: var(--clr-light);
         text-align: center;
         padding: 2.5em 2.5em;
         font-size: var(--fs-h3);
