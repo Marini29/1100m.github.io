@@ -465,6 +465,29 @@ header{
     color: var(--clr-dark);
     text-align: center;
 }
+.pedidos_p{
+    padding: 1em;
+    color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    text-align: center;
+}
+.social-list_p{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0;
+    padding: 0;
+}
+.fa-instagram{
+    color:var(--clr-accent);
+}
+.fa-facebook{
+    color:var(--clr-accent);
+}
+.fa-whatsapp{
+    color:var(--clr-accent);
+}
 /* Project items page*/
 
 .portfolio-item-individual{
@@ -834,6 +857,7 @@ header{
     grid-area: email;
     margin: 0 auto;
     padding-top: 1em;
+    color: var(--clr-accent);
 }
 .footer__social{
     grid-area: social;
@@ -862,6 +886,7 @@ header{
 .footer__link{
 
     font-weight: var(--fw-bold);
+    
 }
 
 
@@ -885,6 +910,7 @@ header{
 
 .social-list__item{
     margin: 0 .5em;
+  
 }
 .social-list__link{
     padding: .5em;
