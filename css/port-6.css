@@ -19,6 +19,7 @@
     --clr-dark--op:#0f0f0fd0 ;
     --clr-accent: #4c847e;/*335BB7-1140AC-#007cc0*/
     --clr-gray:#434c4b;/*rgba(236, 236, 236, 0.836);*/
+    --clr-white-op:#0f0f0f8e;
 
     --fs-h1: 3rem;
     --fs-h2: 1.5rem;
@@ -351,6 +352,7 @@ header{
     max-width: 250px;
     align-content: right;
     text-align: center;
+    
 }
 
 .video__container{
@@ -673,11 +675,15 @@ header{
     
     }
     .task__port{
-        padding-top: 6em;
+        margin-top: 5em;
+        padding-top: 1em;
         margin-left: auto;
         margin-right: auto;
         left: 50%;
         right: 5%;
+        background-color:var(--clr-white-op);  
+        border-radius: 2px; 
+        background-blend-mode: multiply;
     }
     .port__img{
         margin: 0 auto;
@@ -791,10 +797,9 @@ header{
     opacity: .9;
 }
 .about_text_p{
-    position: absolute;
+    position: relative;
     font-family: var(--ff-secondary);
-    left: 50%;
-    top: 50%;
+    margin-top: 25%;
 }
 @media (max-width: 600px){
     .section_about{
@@ -806,8 +811,7 @@ header{
     }
 
 .about_text_p{
-    left: 0%;
-    top: 75%;
+
 }
 }
 
