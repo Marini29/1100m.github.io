@@ -396,8 +396,8 @@ header{
     color: var(--clr-light);
     padding-top: 2em;
     padding-bottom: 2em;
-    
 }
+
 
 .services {
     color: var(--clr-light);
@@ -460,10 +460,16 @@ header{
 .my-work{
     color: var(--clr-light);
     padding-top: 4em;
+    background-image: url(../img/white_black_image_5.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
 }
 
 .work_p{
-    padding: 1em;
+    margin-bottom: 0;
+    padding-top: 1em;
     color: var(--clr-dark);
     text-align: center;
 }
@@ -692,7 +698,12 @@ header{
         }
 }
 .section_contact{
-    padding-top: 2em;
+    padding-top: 2em;;
+    background-image: url(../img/white_black_image_5.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
 }
 .img_contact{
    /* display: block;
