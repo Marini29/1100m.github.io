@@ -790,7 +790,7 @@ header{
     grid-template-columns: 1fr 1fr; 
 }
 .about_img{
-    background-image: url(../img/about_.jpg);
+    background-image: url(../img/about_2.jpg);
     background-position: 50% 70%;
     background-size: cover;
     background-repeat: no-repeat;
