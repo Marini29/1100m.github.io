@@ -588,6 +588,21 @@ header{
 .port-tag:hover{
     background-color: rgba(0,0,0,0.15);
 }
+.port-price{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: .5em .5em;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-lg);
+    font-size: 1rem;
+    z-index: 3;
+    transition: 1s;
+    color: var(--clr-light);
+    background-color: rgba(0,0,0,0.25);
+    border-radius: .5em;
+}
+
 
 
 .name_light{
