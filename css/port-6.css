@@ -482,10 +482,16 @@ header{
 }
 .social-list_p{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0 0 0;
-    padding: 0;
+    display: grid;
+    grid-template-rows: 3fr;
+    justify-content: left;
+    vertical-align: middle;
+    margin: 0;
+    
+}
+.contact_list{
+    margin: 0 0;
+    padding: 0 0;
 }
 .fa-instagram{
     color:var(--clr-accent);
@@ -496,6 +502,29 @@ header{
 .fa-whatsapp{
     color:var(--clr-accent);
 }
+
+.instagram_space{
+    height: 500px;
+    padding: 1em;
+}
+#instafeed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    max-width: 64rem;
+    margin: auto;
+  }
+  
+  #instafeed a {
+    display: block;
+  }
+  
+  #instafeed img {
+    display: block;
+    width: 100%;
+  }
 /* Project items page*/
 
 .portfolio-item-individual{
@@ -515,6 +544,13 @@ header{
 .portfolio{
     display: grid;
     grid-template-columns: repeat(auto-fiLL,minmax(300px,1fr));
+}
+.portfolio_blend{
+    display: grid;
+    grid-template-columns: repeat(auto-fiLL,minmax(300px,1fr));
+}
+.blend_img{
+    box-shadow: var(--bs);
 }
 .portfolio__item{
     align-content: center;
@@ -621,6 +657,17 @@ header{
         grid-template-columns: repeat(3,1fr);
        
     }
+    .portfolio_blend{
+        display: grid;
+        grid-gap: 1em;
+        padding-bottom: 2em;
+        grid-template-columns: repeat(3,1fr);    
+    }
+    .blend_img{
+        max-width: 300px;
+        place-self: center;
+    }
+
 }
 /**/
 
@@ -669,7 +716,7 @@ header{
         display: none;
     }
     #home{
-            background: url(../img/fondo_web_final.png);
+            background: url(../img/fondo_web_final.jpg);
             background-size: cover;
             background-position: 65% 75%;
     }
@@ -711,6 +758,11 @@ header{
         height: 250px;
         object-fit: contain;
         }
+        .blend_img{
+            margin: 0.5em auto;
+            height: 300px;
+            object-fit: contain;
+        }
 }
 .section_contact{
     padding-top: 2em;;
@@ -746,11 +798,12 @@ header{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 40%;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     max-width: 100vw;
     margin: 0 0;
     align-content: center;
 }
+
 .location{
     position: relative;
     display: grid;
@@ -816,7 +869,7 @@ header{
     
 }
 .about_text{
-    background-image: url(../img/Back_3.png);
+    background-image: url(../img/Back_3.jpg);
     background-position:90% 80%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -849,7 +902,7 @@ header{
     background-image: url(../img/white_black_image_5.png);
     background-position: center;
     background-size: cover;
-    background-blend-mode: color-burn;
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     color: var(--clr-light);
     text-align: center;
@@ -939,7 +992,10 @@ header{
 }
 
 .social-list__item{
-    margin: 0 .5em;
+    margin: 0 0;
+    height: 20vh;
+    vertical-align: middle;
+
   
 }
 .social-list__link{
@@ -947,16 +1003,5 @@ header{
 }
 
 
-/*
-.intro{
-    background-color: transparent;
-    background-image: url(../img/portfolio-back.png);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    text-align: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
-}*/
+
 
