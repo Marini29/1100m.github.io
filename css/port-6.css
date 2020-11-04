@@ -480,19 +480,7 @@ header{
     font-size: var(--fs-h3);
     text-align: center;
 }
-.social-list_p{
-    list-style: none;
-    display: grid;
-    grid-template-rows: 3fr;
-    justify-content: left;
-    vertical-align: middle;
-    margin: 0;
-    
-}
-.contact_list{
-    margin: 0 0;
-    padding: 0 0;
-}
+
 .fa-instagram{
     color:var(--clr-accent);
 }
@@ -794,16 +782,6 @@ header{
 .p_abstract{
     font-family: var(--ff-secondary);
 }
-.three__grid-items{
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 40%;
-    grid-template-rows: 1fr;
-    max-width: 100vw;
-    margin: 0 0;
-    align-content: center;
-}
-
 .location{
     position: relative;
     display: grid;
@@ -831,11 +809,6 @@ header{
 }
 /*Contact_for mobile*/
 @media (max-width: 600px){
-    .three__grid-items{
-        max-width: 600px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
     .location{
         max-width: 600px;
         grid-template-columns: 1fr;
@@ -983,7 +956,44 @@ header{
     text-decoration: underline;
 }
 
-.social-list{
+.three__grid-items{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 60vh;
+    max-width: 100vw;
+    margin: 0 0;
+    align-content: center;
+    max-height: 60vh;
+}
+
+.contact_list{
+    max-height: 60vh; 
+}
+
+.social-list_p{
+    margin: 0;
+    list-style: none;
+    justify-items: center;  
+    
+
+}
+.social-list__item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 20vh;   
+}
+.social-list__link{
+    align-self: center;
+}
+.social-list__link strong{
+    padding-left: 1em;
+    align-self: center;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+}
+.social-list1{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -991,17 +1001,32 @@ header{
     padding: 0;
 }
 
-.social-list__item{
+.social-list__item1{
     margin: 0 0;
     height: 20vh;
     vertical-align: middle;
 
   
 }
-.social-list__link{
+.social-list__link1{
     padding: .5em;
 }
 
+@media (max-width: 600px){
 
+    .three__grid-items{
 
+        position: relative;
+        max-width: 600px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+    .social-list__link strong{
+        padding-left: .5em;
+        align-self: center;
+        font-family: var(--ff-secondary);
+        font-size: var(--fs-fot);
+    }
 
+}
