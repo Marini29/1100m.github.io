@@ -1026,7 +1026,12 @@ header{
         padding-left: .5em;
         align-self: center;
         font-family: var(--ff-secondary);
-        font-size: var(--fs-fot);
+        font-size: 0;
+    }
+    .social-list__link{
+        padding: .5em;
+        align-self: center;
+        margin: 0 auto;
     }
 
 }
