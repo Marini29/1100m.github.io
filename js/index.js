@@ -27,6 +27,15 @@ navLink.forEach(link =>{
         document.body.classList.remove('nav__open');
     })
 })
+
+ // CONDITION TO DETECT SYSTEM 
+$(document).ready(function(){
+
+      if (screen.width <= 700) {
+      
+      $(".video__container1").remove();
+      }
+});
 //------------click
 /*var message="Right-click has been disabled";
 function clickIE() {
