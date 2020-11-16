@@ -36,6 +36,10 @@ $(document).ready(function(){
       $(".video__container1").remove();
       }
 });
+
+
+
+
 //------------click
 /*var message="Right-click has been disabled";
 function clickIE() {
