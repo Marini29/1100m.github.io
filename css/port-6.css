@@ -491,6 +491,13 @@ header{
     font-size: var(--fs-h3);
     text-align: center;
 }
+.proceso{
+    padding-bottom: 1em;
+    color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h3);
+    text-align: center;
+}
 
 .fa-instagram{
     color:var(--clr-accent);
