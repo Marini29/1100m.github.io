@@ -147,7 +147,12 @@ header{
     z-index: 101;
     max-width: 150px;
     margin: -.5em auto;
-    
+}
+.logo_ar{
+    position: static;
+    z-index: 101;
+    max-width: 150px;
+    margin: .5em auto;
 }
 .img_logo{  
     max-width: 100%;
@@ -207,6 +212,11 @@ header{
 @media (max-width: 600px){
  .logo{
     position: relative;
+    max-width: 150px;
+}
+.logo_ar{
+    position: relative;
+    z-index: 101;
     max-width: 150px;
 }
 header{
