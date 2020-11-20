@@ -12,8 +12,7 @@
                 21,
                 22,
                 23,
-                24,
-                25
+                24
             ]
         }
     ],
@@ -217,20 +216,6 @@
                 0.02291005291044712,
                 6.8821611404418945,
                 -1.7335436496068723e-05
-            ]
-        },
-        {
-            "name" : "Light.001",
-            "rotation" : [
-                0.16907575726509094,
-                0.7558803558349609,
-                -0.27217137813568115,
-                0.570947527885437
-            ],
-            "translation" : [
-                1.4385061264038086,
-                2.578951835632324,
-                3.86670184135437
             ]
         }
     ],
@@ -476,8 +461,45 @@
         },
         {
             "doubleSided" : true,
-            "name" : "Material.001",
-            "pbrMetallicRoughness" : {}
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.08009696006774902,
+                    0.08009696006774902,
+                    0.08009696006774902,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material",
+            "normalTexture" : {
+                "index" : 27,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 28,
+                    "texCoord" : 0
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 29,
+                    "texCoord" : 0
+                }
+            }
         }
     ],
     "meshes" : [
@@ -630,7 +652,7 @@
                         "TEXCOORD_0" : 41
                     },
                     "indices" : 42,
-                    "material" : 9
+                    "material" : 10
                 }
             ]
         }
@@ -716,6 +738,15 @@
         },
         {
             "source" : 26
+        },
+        {
+            "source" : 27
+        },
+        {
+            "source" : 28
+        },
+        {
+            "source" : 29
         }
     ],
     "images" : [
@@ -853,6 +884,21 @@
             "mimeType" : "image/png",
             "name" : "lambert1_metallicRoughness",
             "uri" : "moka_texture/lambert1_metallicRoughness.png"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Plastic011_2K_Normal",
+            "uri" : "moka_texture/Plastic011_2K_Normal.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Plastic011_2K_Color",
+            "uri" : "moka_texture/Plastic011_2K_Color.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Plastic011_2K_Roughness",
+            "uri" : "moka_texture/Plastic011_2K_Roughness.jpg"
         }
     ],
     "accessors" : [
