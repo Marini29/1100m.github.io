@@ -599,7 +599,7 @@ header{
     overflow: hidden;
     object-fit: cover;
     max-height: 350px;
-    margin: 0 0;
+    margin: 2% 2%;
     padding: 0 0;
     display: flex;
     flex-direction: column;
@@ -670,14 +670,14 @@ header{
 @media (min-width: 900px ){
     .portfolio{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
        
     }
     .portfolio_blend{
         display: grid;
         grid-gap: 1em;
         padding-bottom: 2em;
-        grid-template-columns: repeat(3,1fr);    
+        grid-template-columns: repeat(4,1fr);    
     }
     .blend_img{
         max-width: 300px;
